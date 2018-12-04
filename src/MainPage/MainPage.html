@@ -7,35 +7,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js"></script>
-  <!-- Semantic UI (Side Bar) -->
-  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+
+  <!-- Semantic UI -->
+  <link rel="stylesheet" type="text/css" href="../../semantic/semantic.css">
   <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
-  <script src="semantic/dist/semantic.min.js"></script>
+  <script src="../../semantic/semantic.js"></script>
+
 </head>
 <body>
   Mainpage
-  <div class="ui right sidebar inverted vertical menu">
-    <a class="item">
-      1
-    </a>
-    <a class="item">
-      2
-    </a>
-    <a class="item">
-      3
-    </a>
-  </div>
-  <div class="pusher">
-    <!-- Site content !-->
-  </div>
+  
+  <div class="ui right vertical menu sidebar">
+      <div class="item">
+          <div class="header">SOFTWARE</div>
+      </div>
+
+      <div class="item">
+        <div class="header">1</div>
+        <div class="menu">
+          <a class="item" href="../History/History_1.html">1-1</a>
+          <a class="item" href="../History/History_2.html">1-2</a>
+          <a class="item" href="../History/History_3.html">1-3</a>
+          <a class="item" href="../History/History_4.html">1-4</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="header">2</div>
+        <div class="menu">
+          <a class="item" href="../Introduce/Introduce_1.html">2-1</a>
+          <a class="item" href="../Introduce/Introduce_2.html">2-2</a>
+          <a class="item" href="../Introduce/Introduce_3.html">2-3</a>
+          <a class="item" href="../Introduce/Introduce_4.html">2-4</a>
+          <a class="item" href="../Introduce/Introduce_5.html">2-5</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pusher">
+      <!-- <button id="contents" class="ui blue basic icon button"> -->
+      <button id="contents" class="ui red inverted button">
+        <i class= "icon bars"></i>
+        CONTENTS
+      </button>
+    </div>
 
   <script>
-    $('.ui.sidebar')
-      .sidebar('toggle')
-    ;
+    $('#contents').click(function(){
+      $('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');
+    })
   </script>
 </body>
 </html>
