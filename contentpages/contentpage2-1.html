@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contentpage2-1</title>
+    <link rel="stylesheet" href="Page3.css">
+</head>
+<body>
+    <!-- 누르면 홈으로 -->
+    <h1>Sns Share</h1>
+    <!-- 누르면 사이드바 -->
+    <h3>menu</h3>
+    <p>
+        <!-- width="1000" height="500" -->
+        <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/K7qpiEN4DRI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </p>
+    <div class="container">
+        <button class="share-to btn" data-sns="facebook">Facebook</button>
+        <button class="share-to btn" data-sns="twitter">Twitter</button>
+        <button class="share-to btn" data-sns="google+">Google+</button>
+        <button class="share-to btn" data-sns="line">Line</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>
+        <!-- 누르면 그 동영상 페이지로 이동 -->
+        <a href="contentpage2-1.html">
+            <img src="https://img.youtube.com/vi/K7qpiEN4DRI/0.jpg" width="30%" height="240px">
+        </a>
+        <a href="contentpage2-2.html">
+            <img src="https://img.youtube.com/vi/787G9A5Qs0U/0.jpg" width="30%" height="240px">
+        </a>
+        <a href="contentpage2-3.html">
+            <img src="https://img.youtube.com/vi/kr-VJYkOpMY/0.jpg" width="30%" height="240px">
+        </a>
+    </p>
+    <p>
+        <!-- 누르면 그 동영상 페이지로 이동 -->
+        <a href="contentpage2-4.html">
+            <img src="https://img.youtube.com/vi/4ZHloJVhcRY/0.jpg" width="30%" height="240px">
+        </a>
+        <a href="contentpage2-5.html">
+            <img src="https://img.youtube.com/vi/hFRS46PsDU0/0.jpg" width="30%" height="240px">
+        </a>
+        <a href="contentpage2-6.html">
+            <img src="https://img.youtube.com/vi/z0OFiykOK3s/0.jpg" width="30%" height="240px">
+        </a>
+    </p>
+    
+    <!-- JavaScript -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery.snsShare.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('.share-to').snsShare("쓰고 싶은 말", "https://www.youtube.com/embed/K7qpiEN4DRI");
+        });
+    </script>
+</body>
+</html>

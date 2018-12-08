@@ -1,0 +1,33 @@
+h1{
+    border: 2px solid black;
+    display: inline;
+    padding: 2px;
+}
+h3{
+    border: 2px solid black;
+    display: inline;
+    padding: 2px;
+    float: right;
+}
+p{
+    text-align: center;
+}
+img{
+    margin: 10px;
+}
+div{
+    /* vertical-align: bottom; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    /* float: left;
+    left: 50%; */
+    margin-right: 50px;
+    width: 120px;
+    height: 40px;
+}
+a{
+    text-decoration: none;
+}
