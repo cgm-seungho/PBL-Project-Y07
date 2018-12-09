@@ -16,17 +16,36 @@ img{
     margin: 10px;
 }
 div{
-    /* vertical-align: bottom; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 button{
-    /* float: left;
-    left: 50%; */
     margin-right: 50px;
     width: 120px;
     height: 40px;
+}
+#facebook{
+    color: white;
+    background-color: #3B5988;
+    border-color: #3B5988;
+    font-weight: 1000;
+}
+#twitter{
+    background-color: #00acee;
+    border-color: #00acee;
+    font-weight: 1000;
+}
+#google{
+    background-color: #DD4B39;
+    border-color: #DD4B39;
+    font-weight: 1000;
+}
+#line{
+    background-color: #2DB400;
+    border-color: #2DB400;
+    color: white;
+    font-weight: 1000;
 }
 a{
     text-decoration: none;
