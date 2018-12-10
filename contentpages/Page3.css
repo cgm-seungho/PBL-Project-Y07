@@ -1,27 +1,17 @@
-h1{
-    border: 2px solid black;
-    display: inline;
-    padding: 2px;
-}
-h3{
-    border: 2px solid black;
-    display: inline;
-    padding: 2px;
-    float: right;
-}
-p{
-    text-align: center;
+.video {
+	text-align: center;
+	margin-bottom: 30px;
 }
 
-
-div{
+.button_container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-button{
-    margin-right: 50px;
-    width: 180px;
+
+button {
+	margin-right: 50px;
+	width: 180px;
 }
 
 #facebook, #twitter, #google, #line {
@@ -40,11 +30,6 @@ button{
 #line{
     background-color: #2DB400;
 }
-a{
-    text-decoration: none;
-}
-
-
 
 #header > .container {
     padding-top : 40px;
